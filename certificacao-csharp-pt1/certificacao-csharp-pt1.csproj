@@ -54,6 +54,8 @@
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\5 - Booleanos\Booleanos.cs" />
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\6 - Estruturas Definidas pelo Usuário\Estruturas.cs" />
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\7 - Enums\Enumeracoes.cs" />
+    <Compile Include="Aula2 - criar tipos de referência\2 - Classes\Classes.cs" />
+    <Compile Include="Aula2 - criar tipos de referência\1 - Tipos de Referencia\TiposDeReferencia.cs" />
     <Compile Include="IAulaItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
