@@ -54,7 +54,10 @@
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\5 - Booleanos\Booleanos.cs" />
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\6 - Estruturas Definidas pelo Usuário\Estruturas.cs" />
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\7 - Enums\Enumeracoes.cs" />
+    <Compile Include="Aula4 - sobrecarga de método\2 - Metodos Substituidos\MetodosSubstituidos.cs" />
+    <Compile Include="Aula4 - sobrecarga de método\1 - Sobrecarga de Metodo\Sobrecargas.cs" />
     <Compile Include="Aula3 - classes, metodos\1 - Metodo\Metodos.cs" />
+    <Compile Include="Aula3 - classes, metodos\5 - Propriedades Indexadas\PropriedadesIndexadas.cs" />
     <Compile Include="Aula3 - classes, metodos\4- Metodos de Extensao\MetodosDeExtensao.cs" />
     <Compile Include="Aula3 - classes, metodos\2 - Parametros Opcionais\ParametrosNomeados.cs" />
     <Compile Include="Aula3 - classes, metodos\2 - Parametros Opcionais\ParametrosOpcionais.cs" />
