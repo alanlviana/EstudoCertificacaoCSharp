@@ -54,6 +54,8 @@
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\5 - Booleanos\Booleanos.cs" />
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\6 - Estruturas Definidas pelo Usuário\Estruturas.cs" />
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\7 - Enums\Enumeracoes.cs" />
+    <Compile Include="Aula6 - cast de tipos\5 - Metodos Auxiliares de Conversão\MetodosAuxiliares.cs" />
+    <Compile Include="Aula6 - cast de tipos\4 - Conversões Definidas pelo Usuário\OperadoresDeConversao.cs" />
     <Compile Include="Aula6 - cast de tipos\3 - Operadores IS e AS\OperadoresISeAS.cs" />
     <Compile Include="Aula6 - cast de tipos\2 - Conversoes Explicitas\ConversoesExplicitas.cs" />
     <Compile Include="Aula6 - cast de tipos\1 - Conversoes Implicitas\ConversoesImplicitas.cs" />
