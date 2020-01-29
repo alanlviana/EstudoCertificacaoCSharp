@@ -35,7 +35,9 @@ namespace certificacao_csharp_roteiro
 
     }
 
-    class Animal
+    interface IAnimal { }
+
+    class Animal: IAnimal
     {
         public string Nome { get; set; }
 
