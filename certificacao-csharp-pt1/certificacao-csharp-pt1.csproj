@@ -34,8 +34,8 @@
     <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +54,9 @@
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\5 - Booleanos\Booleanos.cs" />
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\6 - Estruturas Definidas pelo Usuário\Estruturas.cs" />
     <Compile Include="Aula1 - criar tipos de valor, incluindo estruturas e enum\7 - Enums\Enumeracoes.cs" />
+    <Compile Include="Aula7 - string var object dynamic\5 - Interoperabilidade COM\InteropCOM.cs" />
+    <Compile Include="Aula7 - string var object dynamic\4 - Adicionando metodos dinamicamente\UsandoExpandObject.cs" />
+    <Compile Include="Aula7 - string var object dynamic\3 - ResolucaoSobrecarga\ResolucaoSobrecarga.cs" />
     <Compile Include="Aula7 - string var object dynamic\2 - Conversoes de Dynamic\ConversoesDeDynamic.cs" />
     <Compile Include="Aula7 - string var object dynamic\1 - Usando Dynamic\UsandoDynamic.cs" />
     <Compile Include="Aula6 - cast de tipos\5 - Metodos Auxiliares de Conversão\MetodosAuxiliares.cs" />

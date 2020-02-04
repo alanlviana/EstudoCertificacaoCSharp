@@ -70,6 +70,7 @@ namespace certificacao_csharp_roteiro
         {
             return new List<MenuItem>
             {
+                // Curso 1 e 2
                 new MenuItem("Tipos de Valor", typeof(TiposDeValor)),
                 new MenuItem("Tipos Inteiros", typeof(TiposInteiros)),
                 new MenuItem("Ponto Flututante", typeof(PontoFlutuante)),
@@ -100,9 +101,11 @@ namespace certificacao_csharp_roteiro
                 new MenuItem("Métodos Auxiliares de Conversão", typeof(MetodosAuxiliares)),
                 new MenuItem("Usando Dynamic", typeof(UsandoDynamic)),
                 new MenuItem("Conversões de Dynamic", typeof(ConversoesDeDynamic)),
-                //new MenuItem("Resolucão de Sobrecarga", typeof(ResolucaoSobrecarga)),
-                //new MenuItem("Usando ExpandObject", typeof(UsandoExpandObject)),
-                //new MenuItem("Interoperabilidade COM", typeof(InteropCOM))                
+                new MenuItem("Resolucão de Sobrecarga", typeof(ResolucaoSobrecarga)),
+                new MenuItem("Usando ExpandObject", typeof(UsandoExpandObject)),
+                new MenuItem("Interoperabilidade COM", typeof(InteropCOM))     
+                
+                
             };
         }
     }
