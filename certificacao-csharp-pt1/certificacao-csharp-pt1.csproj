@@ -80,7 +80,7 @@
     <Compile Include="Aula2 - criar tipos de referência\3 - Interfaces\Interfaces.cs" />
     <Compile Include="Aula2 - criar tipos de referência\2 - Classes\Classes.cs" />
     <Compile Include="Aula2 - criar tipos de referência\1 - Tipos de Referencia\TiposDeReferencia.cs" />
-    <Compile Include="IAulaItem.cs" />
+    <Compile Include="MenuPrincipal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -88,6 +88,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Curso.Arquitetura.Menu\Curso.Arquitetura.Menu.csproj">
+      <Project>{4B4BF028-F094-4362-ADD5-536CC36B2E18}</Project>
+      <Name>Curso.Arquitetura.Menu</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,7 +1,9 @@
 ﻿
+using Curso.Arquitetura.Menu;
+
 namespace certificacao_csharp_roteiro
 {
-    class ResolucaoSobrecarga : IAulaItem
+    class ResolucaoSobrecarga : IExecutavel
     {
         public void Executar()
         {

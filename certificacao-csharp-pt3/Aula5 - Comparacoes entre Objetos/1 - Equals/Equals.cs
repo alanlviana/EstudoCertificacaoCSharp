@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Curso.Arquitetura.Menu;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace certificacao_csharp_pt3.Aula5
 {
-    class Equals : IAulaItem
+    class Equals : IExecutavel
     {
         public void Executar()
         {

@@ -1,11 +1,12 @@
 ﻿
+using Curso.Arquitetura.Menu;
 using Newtonsoft.Json;
 using System;
 using System.Dynamic;
 
 namespace certificacao_csharp_roteiro
 {
-    class InteropCOM : IAulaItem
+    class InteropCOM : IExecutavel
     {
         public void Executar()
         {

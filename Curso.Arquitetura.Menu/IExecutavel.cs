@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace certificacao_csharp_roteiro
+namespace Curso.Arquitetura.Menu
 {
-    interface IAulaItem
+    public interface IExecutavel
     {
         void Executar();
     }

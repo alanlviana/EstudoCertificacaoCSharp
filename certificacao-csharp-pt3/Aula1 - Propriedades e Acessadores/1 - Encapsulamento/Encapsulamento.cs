@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Curso.Arquitetura.Menu;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace certificacao_csharp_pt3
 {
-    class Encapsulamento : IAulaItem
+    class Encapsulamento : IExecutavel
     {
         public void Executar()
         {
