@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace certificacao_csharp_pt3.Aula3
+namespace certificacao_csharp_pt3.Aula4
 {
-    class InterfacesExplicitas : IAulaItem
+    class ClasseBase : IAulaItem
     {
         public void Executar()
         {
@@ -22,6 +22,17 @@ namespace certificacao_csharp_pt3.Aula3
             IPlantonista plantonista = (IPlantonista)funcionario;
             plantonista.GerarCracha();
             funcionario.GerarCracha();
+
+            Cliente cliente = new Cliente()
+            {
+                CPF = "789.456.123-90",
+                Nome = "Maria de Souza",
+                DataNascimento = new DateTime(1970, 04, 01),
+                DataUltimaCompra = new DateTime(2020, 02, 05),
+                ValorUltimaCompra = 20
+            };
+
+            Console.WriteLine(cliente);
         }
 
         private void Funcionario_CrachaGerado(object sender, EventArgs e)
@@ -51,12 +62,9 @@ namespace certificacao_csharp_pt3.Aula3
         void GerarCracha();
     }
 
-    class Funcionario: IFuncionario, IPlantonista
+    class Funcionario: Pessoa, IFuncionario, IPlantonista
     {
-        public string CPF { get; set; }
-        public string Nome { get; set; }
-        public DateTime DataNascimento { get; set; }
-
+        
         public event EventHandler CrachaGerado;
 
         void IPlantonista.GerarCracha() {
@@ -76,6 +84,26 @@ namespace certificacao_csharp_pt3.Aula3
         int IPlantonista.CargaHorariaMensal { get; set; }
         public Funcionario(decimal salario) { }
         public void EfetuarPagamento() { }
+    }
+
+    abstract class Pessoa
+    {
+        public string CPF { get; set; }
+        public string Nome { get; set; }
+        public DateTime DataNascimento { get; set; }
+    }
+    // sealed indica que uma classe não pode ser herdada
+    sealed class Cliente : Pessoa
+    {
+
+
+        public DateTime? DataUltimaCompra { get; set; }
+        public decimal? ValorUltimaCompra { get; set; }
+
+        public override string ToString()
+        {
+            return $"Nome: {Nome},CPF: {CPF}, DataNascimento: {DataNascimento}, DataUltimaCompra: {DataUltimaCompra}, ValorUltimaCompra: {ValorUltimaCompra}";
+        }
     }
 
 }
