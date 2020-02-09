@@ -26,7 +26,7 @@ namespace certificacao_csharp_pt4
             ImprimirSaldo();
         }
 
-        public void SacarDinheiro(decimal valor)
+        public RetornoOperacao SacarDinheiro(decimal valor)
         {
             Console.WriteLine($"Iniciando saque de {valor:C}");
 
@@ -34,13 +34,15 @@ namespace certificacao_csharp_pt4
             if (!PossuiSaldoSuficiente(valor))
             {
                 ImprimirAviso("Saldo insuficiente.");
-                return;
+                return RetornoOperacao.SaldoInsuficiente;
             } 
 
             Debitar(valor);
             EntregarNotas(valor);
             ImprimirComprovante(valor);
             ImprimirSaldo();
+
+            return RetornoOperacao.OperacaoRealizada;
         }
 
         private void ImprimirAviso(string mensagem)
@@ -72,5 +74,13 @@ namespace certificacao_csharp_pt4
         {
             Console.WriteLine($"Saldo: {Saldo:C}");
         }
+    }
+
+    enum RetornoOperacao
+    {
+        OperacaoRealizada,
+        SaldoInsuficiente,
+        CaixaSemNotas,
+        FalhaComunicacaoServidor
     }
 }

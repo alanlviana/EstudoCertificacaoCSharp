@@ -6,6 +6,10 @@
     <RootNamespace>certificacao_csharp_pt4</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;TRIAL; BASIC; ADVANCED</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Curso.Arquitetura.Menu\Curso.Arquitetura.Menu.csproj" />
   </ItemGroup>
