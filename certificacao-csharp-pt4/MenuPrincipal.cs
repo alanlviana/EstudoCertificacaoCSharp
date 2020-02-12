@@ -14,7 +14,8 @@ namespace certificacao_csharp_pt4
                 new MenuItem("If e Else", typeof(IfElse)),
                 new MenuItem("Combinando Expressões Booleanas", typeof(CombinandoExpressoesBooleanas)),
                 new MenuItem("Usando Switch", typeof(UsandoSwitch)),
-                new MenuItem("Diretivas de Compilação", typeof(DiretivasCompilacao))
+                new MenuItem("Diretivas de Compilação", typeof(DiretivasCompilacao)),
+                new MenuItem("While-Do", typeof(WhileDo)),
             };
         }
     }
