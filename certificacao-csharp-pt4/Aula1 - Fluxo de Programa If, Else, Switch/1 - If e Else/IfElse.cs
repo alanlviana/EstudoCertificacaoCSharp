@@ -18,7 +18,7 @@ namespace certificacao_csharp_pt4
 
     class ContaBancaria
     {
-        private decimal Saldo { get; set; }
+        public decimal Saldo { get; private set; }
 
         public ContaBancaria(int saldo)
         {

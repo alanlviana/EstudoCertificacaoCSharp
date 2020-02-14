@@ -16,6 +16,9 @@ namespace certificacao_csharp_pt4
                 new MenuItem("Usando Switch", typeof(UsandoSwitch)),
                 new MenuItem("Diretivas de Compilação", typeof(DiretivasCompilacao)),
                 new MenuItem("While-Do", typeof(WhileDo)),
+                new MenuItem("For", typeof(For)),
+                new MenuItem("Foreach", typeof(Foreach)),
+                
             };
         }
     }
