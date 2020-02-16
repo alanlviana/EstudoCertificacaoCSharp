@@ -1,4 +1,5 @@
 ﻿using certificacao_csharp_pt4.Item4;
+using certificacao_csharp_pt4.Item5;
 using Curso.Arquitetura.Menu;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace certificacao_csharp_pt4
                 new MenuItem("While-Do", typeof(WhileDo)),
                 new MenuItem("For", typeof(For)),
                 new MenuItem("Foreach", typeof(Foreach)),
-                
+                new MenuItem("Try/Catch", typeof(TryCatch)),
             };
         }
     }
