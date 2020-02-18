@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "certificacao-csharp-pt1", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt3", "certificacao-csharp-pt3\certificacao-csharp-pt3.csproj", "{AD994074-C62C-418F-96C2-02204D193F6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "certificacao-csharp-pt4", "certificacao-csharp-pt4\certificacao-csharp-pt4.csproj", "{0B494DBB-FFF1-4847-8CF2-A6020B4D992A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt4", "certificacao-csharp-pt4\certificacao-csharp-pt4.csproj", "{0B494DBB-FFF1-4847-8CF2-A6020B4D992A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Arquitetura.Menu", "Curso.Arquitetura.Menu\Curso.Arquitetura.Menu.csproj", "{4B4BF028-F094-4362-ADD5-536CC36B2E18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso.Arquitetura.Menu", "Curso.Arquitetura.Menu\Curso.Arquitetura.Menu.csproj", "{4B4BF028-F094-4362-ADD5-536CC36B2E18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "certificacao-csharp-pt5", "certificacao-csharp-pt5\certificacao-csharp-pt5.csproj", "{8B7207C2-4146-4BF1-A615-193BB6C79FA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4B4BF028-F094-4362-ADD5-536CC36B2E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B4BF028-F094-4362-ADD5-536CC36B2E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B4BF028-F094-4362-ADD5-536CC36B2E18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7207C2-4146-4BF1-A615-193BB6C79FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7207C2-4146-4BF1-A615-193BB6C79FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7207C2-4146-4BF1-A615-193BB6C79FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7207C2-4146-4BF1-A615-193BB6C79FA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
