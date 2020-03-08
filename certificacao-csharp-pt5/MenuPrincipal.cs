@@ -15,6 +15,7 @@ namespace certificacao_csharp_pt5
                 new MenuItem("Tipos de Referência", typeof(TiposDeReferencia)),
                 new MenuItem("Finalizador", typeof(Finalizador)),
                 new MenuItem("Disposable", typeof(PadraoDisposable)),
+                new MenuItem("Using", typeof(PadraoUsing)),
 
                 
             };

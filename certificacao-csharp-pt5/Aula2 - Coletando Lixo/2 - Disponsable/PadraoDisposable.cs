@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -27,10 +28,14 @@ namespace certificacao_csharp_pt5.aula2
         public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string lParam);
 
         private IntPtr ponteiroNotepad = new IntPtr(0);
+        private StreamWriter escritor = new StreamWriter("mensagens.txt");
 
 
         public void EnviarMensagem(string mensagem)
         {
+            escritor.WriteLine(mensagem);
+            escritor.Flush();
+
             Process[] notepads = Process.GetProcessesByName("notepad");
             if (notepads.Length == 0) return;
 
@@ -99,7 +104,7 @@ namespace certificacao_csharp_pt5.aula2
             {
                 if (disposing)
                 {
-                    // TODO: dispose managed state (managed objects).
+                    escritor.Dispose();
                 }
                 
                 // Recursos não gerenciados
