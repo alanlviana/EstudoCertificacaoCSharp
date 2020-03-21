@@ -1,5 +1,6 @@
 ﻿using certificacao_csharp_pt5.aula2;
 using certificacao_csharp_pt5.aula4;
+using certificacao_csharp_pt5.aula6;
 using Curso.Arquitetura.Menu;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace certificacao_csharp_pt5
                 new MenuItem("String Reader", typeof(StringReaderExemplo)),
                 new MenuItem("String Writer", typeof(StringWriterExemplo)),
                 new MenuItem("Enumerar String", typeof(EnumerarString)),
+                new MenuItem("String Format", typeof(StringFormat)),
 
 
             };
