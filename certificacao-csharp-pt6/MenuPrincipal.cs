@@ -1,4 +1,7 @@
 ﻿using certificacao_csharp_pt6.Aula1;
+using certificacao_csharp_pt6.Aula2;
+using certificacao_csharp_pt6.Aula3;
+using certificacao_csharp_pt6.Aula4;
 using Curso.Arquitetura.Menu;
 using System;
 using System.Collections.Generic;
@@ -15,8 +18,14 @@ namespace certificacao_csharp_pt6
                 new MenuItem("Serializando com Arquivos", typeof(SerializandoArquivos)),
                 new MenuItem("Deserializando com Arquivos", typeof(DeserializandoArquivos)),
                 new MenuItem("Deserializando com Mapeamento", typeof(DeserializandoComMapeamento)),
-                
-            };
+                new MenuItem("Serializando com Json", typeof(JavascriptSerializerExemplo)),
+                new MenuItem("Deserializando com Json", typeof(DeserializandoComJson)),
+                new MenuItem("Deserializando com Json (Mapeamento)", typeof(DeserializandoComJsonMapeamento)),
+                new MenuItem("Serializacao Binaria", typeof(SerializacaoBinaria)),
+                new MenuItem("Deserialização Binaria", typeof(DeserializacaoBinaria)),
+                new MenuItem("Serialização com Contrato", typeof(SerializacaoComContrato)),               
+                new MenuItem("Deserialização com Contrato", typeof(DeserializacaoComContrato)),               
+            }; 
         }
     }
 }
