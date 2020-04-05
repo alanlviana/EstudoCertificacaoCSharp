@@ -4,12 +4,13 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace certificacao_csharp_pt6.Aula4
+namespace certificacao_csharp_pt6.Aula3
 {
     class DeserializacaoComContrato : IExecutavel
     {
@@ -22,7 +23,7 @@ namespace certificacao_csharp_pt6.Aula4
 
                 Console.WriteLine("Filmes:");
                 Console.WriteLine();
-                loja.Filmes.ForEach(f => Console.WriteLine(f.Titulo));
+                loja.Filmes.ToList().ForEach(f => Console.WriteLine(f.Titulo));
 
                 Console.WriteLine("Diretores:");
                 Console.WriteLine();

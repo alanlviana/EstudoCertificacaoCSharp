@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using System.Text;
 
@@ -9,10 +10,22 @@ namespace certificacao_csharp_pt6.Aula1
     [DataContract]
     public class LojaFilmes
     {
+        private List<Filme> _filmes;
+
         [DataMember]
         public List<Diretor> Diretores = new List<Diretor>();
+
+        public LojaFilmes(List<Diretor> diretores, List<Filme> filmes)
+        {
+            Diretores = diretores;
+            _filmes = filmes;
+        }
+
         [DataMember]
-        public List<Filme> Filmes = new List<Filme>();
+        public IReadOnlyCollection<Filme> Filmes { get {
+                return new ReadOnlyCollection<Filme>(_filmes);
+            }
+        }
 
         public void AdicionaFilme(Filme filme)
         {
@@ -37,9 +50,7 @@ namespace certificacao_csharp_pt6.Aula1
                 christopherNolan
             };
 
-            var novaLoja = new LojaFilmes();
-            novaLoja.Filmes = filmes;
-            novaLoja.Diretores = diretores;
+            var novaLoja = new LojaFilmes(diretores, filmes);
 
             return novaLoja;
         }
@@ -62,9 +73,9 @@ namespace certificacao_csharp_pt6.Aula1
         [DataMember]
         public string Ano { get; set; }
     }
-    [DataContract]
+
     [Serializable]
-    public class Diretor
+    public class Diretor: ISerializable
     {
 
         public Diretor() { }
@@ -77,5 +88,12 @@ namespace certificacao_csharp_pt6.Aula1
         public string Nome { get; set; }
         [DataMember]
         public int NumeroFilmes { get; set; }
+
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue(nameof(Nome), Nome);
+            info.AddValue(nameof(NumeroFilmes), NumeroFilmes);
+            info.AddValue("Resumo", $"Nome: {this.Nome}, Quantidade de filmes: {this.NumeroFilmes}");
+        }
     }
 }

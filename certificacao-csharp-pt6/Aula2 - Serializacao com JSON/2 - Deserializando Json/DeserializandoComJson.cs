@@ -32,7 +32,7 @@ namespace certificacao_csharp_pt6.Aula2
                 loja.Diretores.ForEach(d => Console.WriteLine(d.Nome)); ;
                 
                 Console.WriteLine("Filmes:");
-                loja.Filmes.ForEach(f => Console.WriteLine(f.Titulo)); ;
+                loja.Filmes.ToList().ForEach(f => Console.WriteLine(f.Titulo)); ;
 
             }
         }

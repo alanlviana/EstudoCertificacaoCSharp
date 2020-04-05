@@ -41,9 +41,7 @@ namespace certificacao_csharp_pt6.Aula1
                 christopherNolan
             };
 
-            var novaLoja = new LojaFilmes();
-            novaLoja.Filmes = filmes;
-            novaLoja.Diretores = diretores;
+            var novaLoja = new LojaFilmes(diretores, filmes);
 
             return novaLoja;
         }

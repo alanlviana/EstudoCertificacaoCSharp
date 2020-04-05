@@ -2,6 +2,7 @@
 using certificacao_csharp_pt6.Aula2;
 using certificacao_csharp_pt6.Aula3;
 using certificacao_csharp_pt6.Aula4;
+using certificacao_csharp_pt6.Aula5;
 using Curso.Arquitetura.Menu;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,13 @@ namespace certificacao_csharp_pt6
                 new MenuItem("Deserialização Binaria", typeof(DeserializacaoBinaria)),
                 new MenuItem("Serialização com Contrato", typeof(SerializacaoComContrato)),               
                 new MenuItem("Deserialização com Contrato", typeof(DeserializacaoComContrato)),               
+                new MenuItem("Serialização Personalizada", typeof(SerializacaoPersonalizada)),               
+                new MenuItem("Introducao Arrays", typeof(IntroducaoArrays)),               
+                new MenuItem("Acessando elementos de arrays", typeof(AcessandoElementosArray)),
+                new MenuItem("Buscando e Redirecionando Array", typeof(BuscandoRedirecionandoArray)),
+                new MenuItem("Ordenando, Copiando, Clonando e Limpando Arrays", typeof(OrdenandoCopiandoClonandoLimpandoArray)),
+                new MenuItem("Introducao Lista", typeof(IntroducaoLista)),
+                new MenuItem("Lista somente leitura", typeof(ListaSomenteLeitura)),
             }; 
         }
     }
