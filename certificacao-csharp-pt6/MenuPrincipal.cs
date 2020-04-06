@@ -36,6 +36,7 @@ namespace certificacao_csharp_pt6
                 new MenuItem("Lista somente leitura", typeof(ListaSomenteLeitura)),
                 new MenuItem("Introducao a Conjuntos", typeof(IntroducaoConjuntos)),
                 new MenuItem("Introducao a Dicionarios", typeof(IntroducaoDicionarios)),
+                new MenuItem("Introducao a Filas", typeof(IntroducaoFilas)),
 
                 
             }; 
