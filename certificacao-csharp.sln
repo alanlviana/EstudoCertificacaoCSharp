@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso.Arquitetura.Menu", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt5", "certificacao-csharp-pt5\certificacao-csharp-pt5.csproj", "{8B7207C2-4146-4BF1-A615-193BB6C79FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "certificacao-csharp-pt6", "certificacao-csharp-pt6\certificacao-csharp-pt6.csproj", "{76B9F51B-73B8-43A5-ACA3-28CBB40B8237}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt6", "certificacao-csharp-pt6\certificacao-csharp-pt6.csproj", "{76B9F51B-73B8-43A5-ACA3-28CBB40B8237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "certificacao-csharp-pt7", "certificacao-csharp-pt7\certificacao-csharp-pt7.csproj", "{2557D12E-F5E7-4F39-8C1E-05CD029E2528}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{76B9F51B-73B8-43A5-ACA3-28CBB40B8237}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76B9F51B-73B8-43A5-ACA3-28CBB40B8237}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76B9F51B-73B8-43A5-ACA3-28CBB40B8237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2557D12E-F5E7-4F39-8C1E-05CD029E2528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2557D12E-F5E7-4F39-8C1E-05CD029E2528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2557D12E-F5E7-4F39-8C1E-05CD029E2528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2557D12E-F5E7-4F39-8C1E-05CD029E2528}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
