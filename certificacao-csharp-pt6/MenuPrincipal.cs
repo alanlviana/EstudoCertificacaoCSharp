@@ -3,6 +3,7 @@ using certificacao_csharp_pt6.Aula2;
 using certificacao_csharp_pt6.Aula3;
 using certificacao_csharp_pt6.Aula4;
 using certificacao_csharp_pt6.Aula5;
+using certificacao_csharp_pt6.Aula6;
 using Curso.Arquitetura.Menu;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,10 @@ namespace certificacao_csharp_pt6
                 new MenuItem("Ordenando, Copiando, Clonando e Limpando Arrays", typeof(OrdenandoCopiandoClonandoLimpandoArray)),
                 new MenuItem("Introducao Lista", typeof(IntroducaoLista)),
                 new MenuItem("Lista somente leitura", typeof(ListaSomenteLeitura)),
+                new MenuItem("Introducao a Conjuntos", typeof(IntroducaoConjuntos)),
+                new MenuItem("Introducao a Dicionarios", typeof(IntroducaoDicionarios)),
+
+                
             }; 
         }
     }
