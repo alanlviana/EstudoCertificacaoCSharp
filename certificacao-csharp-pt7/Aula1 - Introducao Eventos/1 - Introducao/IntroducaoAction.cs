@@ -3,15 +3,21 @@ using System;
 
 namespace certificacao_csharp_pt7.Aula1
 {
-    class IntroducaoEventos : IExecutavel
+    class IntroducaoAction : IExecutavel
     {
         public void Executar()
         {
             var campainha = new Campainha();
 
-            campainha.OnCampainhaTocou = () =>
+            campainha.OnCampainhaTocou += () =>
             {
-                Console.WriteLine("Campainha tocada!");
+                Console.WriteLine("Campainha tocada! (1)");
+            };
+
+
+            campainha.OnCampainhaTocou += () =>
+            {
+                Console.WriteLine("Campainha tocada! (2)");
             };
 
             campainha.Tocar();
