@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Alura.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Diretores.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -11,6 +11,8 @@ namespace certificacao_csharp_pt8
         {
             return new List<MenuItem> {
                 new MenuItem("A classe file stream", typeof(ClasseFileStream)),
+                new MenuItem("Gravando com file stream", typeof(EscrevendoComFileStream)),
+                new MenuItem("Desafio FileStream", typeof(DesafioFileStream)),
                 
             }; 
         }
