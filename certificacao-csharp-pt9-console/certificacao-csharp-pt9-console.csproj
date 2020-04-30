@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>certificacao_csharp_pt9_console</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>CertificacaoAlura.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\certificacao-csharp-pt9-dados\certificacao-csharp-pt9-dados.csproj" />
+    <ProjectReference Include="..\Curso.Arquitetura.Menu\Curso.Arquitetura.Menu.csproj" />
+  </ItemGroup>
+
+</Project>
