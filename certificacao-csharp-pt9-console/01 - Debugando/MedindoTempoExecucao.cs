@@ -7,7 +7,7 @@ using System.Text;
 
 namespace certificacao_csharp_pt9_console._01___Debugando
 {
-    class VersaoAssembly : IExecutavel
+    class MedindoTempoExecucao : IExecutavel
     {
         private readonly string DatabaseServer = @"(localdb)\ProjectsV13";
         private readonly string MasterDatabase = "master";
@@ -15,12 +15,14 @@ namespace certificacao_csharp_pt9_console._01___Debugando
 
         public async void Executar()
         {
-            TraceListener traceListener = new TextWriterTraceListener("Trace.txt");
-            Trace.AutoFlush = true;
-            Trace.Listeners.Add(traceListener);
+            Stopwatch stopwatch = Stopwatch.StartNew();
 
             CinemaDB cinema = new CinemaDB(DatabaseServer, MasterDatabase, DatabaseName);
             await cinema.CriarBancoDeDadosAsync();
+            stopwatch.Stop();
+
+            Console.WriteLine("Tempo para criação do banco de dados: " + stopwatch.ElapsedMilliseconds);
+
             var filmes = await cinema.GetFilmes();
             
             Console.WriteLine(new string('=', 50));
@@ -33,8 +35,6 @@ namespace certificacao_csharp_pt9_console._01___Debugando
                 Console.WriteLine(new string('-', 50));
 
             }
-
-            Trace.Listeners.Remove(traceListener);
 
         }
     }

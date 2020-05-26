@@ -1,13 +1,15 @@
-﻿using certificacao_csharp_pt9_dados;
+﻿using certificacao_csharp_pt9_console._01___Debugando.Performance;
+using certificacao_csharp_pt9_dados;
 using Curso.Arquitetura.Menu;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace certificacao_csharp_pt9_console._01___Debugando
 {
-    class VersaoAssembly : IExecutavel
+    class MonitorandoExecucao : IExecutavel
     {
         private readonly string DatabaseServer = @"(localdb)\ProjectsV13";
         private readonly string MasterDatabase = "master";
@@ -15,17 +17,38 @@ namespace certificacao_csharp_pt9_console._01___Debugando
 
         public async void Executar()
         {
-            TraceListener traceListener = new TextWriterTraceListener("Trace.txt");
-            Trace.AutoFlush = true;
-            Trace.Listeners.Add(traceListener);
 
             CinemaDB cinema = new CinemaDB(DatabaseServer, MasterDatabase, DatabaseName);
             await cinema.CriarBancoDeDadosAsync();
+            Stopwatch stopwatch = new Stopwatch();
+
+            while (true) {
+                stopwatch.Start();
+                await GerarRelatorio(cinema);
+                stopwatch.Stop();
+
+                RegistroPerformance(stopwatch.ElapsedTicks);
+            }
+
+
+        }
+
+        private void RegistroPerformance(long elapsedTicks)
+        {
+            // Criar Categoria
+            MonitoramentoPerformance.ConfigurarCategoria();
+
+            MonitoramentoPerformance.ContadorRelatorio.IncrementBy(elapsedTicks);
+            MonitoramentoPerformance.ContadorRelatorioBase.Increment();
+        }
+
+        private static async Task GerarRelatorio(CinemaDB cinema)
+        {
             var filmes = await cinema.GetFilmes();
-            
+
             Console.WriteLine(new string('=', 50));
             Console.WriteLine($"Relatório de Filmes");
-            Console.WriteLine(new string('=',50));
+            Console.WriteLine(new string('=', 50));
 
             foreach (var filme in filmes)
             {
@@ -33,9 +56,6 @@ namespace certificacao_csharp_pt9_console._01___Debugando
                 Console.WriteLine(new string('-', 50));
 
             }
-
-            Trace.Listeners.Remove(traceListener);
-
         }
     }
 }

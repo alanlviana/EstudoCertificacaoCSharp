@@ -49,6 +49,7 @@ namespace certificacao_csharp_pt9_dados
 
         private async Task CriarBancoAsync()
         {
+            Trace.WriteLine($"Entrando em {nameof(CriarBancoAsync)}", "METODO");
             string sql = $@"IF EXISTS (SELECT * FROM sys.databases WHERE name = N'{databaseName}')
                     BEGIN
                         DROP DATABASE [{databaseName}]

@@ -11,6 +11,8 @@ namespace certificacao_csharp_pt9_console
             return new List<MenuItem> {
                 new MenuItem("VersaoAssembly", typeof(VersaoAssembly)),
                 new MenuItem("NomeForteAssembly", typeof(NomeForteAssembly)),
+                new MenuItem("MedindoTempoExecucao", typeof(MedindoTempoExecucao)),
+                new MenuItem("MonitorandoExecucao", typeof(MonitorandoExecucao)),
 
                 
 
