@@ -50,6 +50,7 @@ namespace certificacao_csharp_pt10._3TiposSystemReflection
             foreach(var property in propertiesCarrinhoCliente)
             {
                 Console.WriteLine(property);
+
                 Console.WriteLine(property.GetGetMethod());
 
                 Console.WriteLine(property.GetSetMethod());

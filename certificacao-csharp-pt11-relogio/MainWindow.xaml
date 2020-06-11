@@ -1,0 +1,30 @@
+﻿<Window x:Class="certificacao_csharp_pt11_relogio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:certificacao_csharp_pt11_relogio"
+        mc:Ignorable="d"
+        Title="Cronômetro" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+               x:Name="txtRelogio" 
+               Content="" 
+               FontSize="50" 
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               VerticalContentAlignment="Center" />
+        <Button Grid.Row="1" Grid.Column="0" Content="Iniciar" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70" Width="150" Click="Button_Click" Background="#FF89CEE1" BorderThickness="0,0,0,0" FontStyle="Italic"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="Pausar" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="70" Width="150" Background="#FF89CEE1" BorderThickness="0,0,0,0" FontStyle="Italic" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

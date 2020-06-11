@@ -25,7 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt9-con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt9-dados", "certificacao-csharp-pt9-dados\certificacao-csharp-pt9-dados.csproj", "{B22EEDE4-6AB3-4F5C-9E33-0A3C92AD95C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "certificacao-csharp-pt10", "certificacao-csharp-pt10\certificacao-csharp-pt10.csproj", "{4CE3F8D9-476B-47FD-888D-0701A33AF549}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt10", "certificacao-csharp-pt10\certificacao-csharp-pt10.csproj", "{4CE3F8D9-476B-47FD-888D-0701A33AF549}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt11", "certificacao-csharp-pt11\certificacao-csharp-pt11.csproj", "{3444F47E-8A88-4836-BE17-EA4951119880}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "certificacao-csharp-pt11-relogio", "certificacao-csharp-pt11-relogio\certificacao-csharp-pt11-relogio.csproj", "{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +81,14 @@ Global
 		{4CE3F8D9-476B-47FD-888D-0701A33AF549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CE3F8D9-476B-47FD-888D-0701A33AF549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CE3F8D9-476B-47FD-888D-0701A33AF549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3444F47E-8A88-4836-BE17-EA4951119880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3444F47E-8A88-4836-BE17-EA4951119880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3444F47E-8A88-4836-BE17-EA4951119880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3444F47E-8A88-4836-BE17-EA4951119880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
