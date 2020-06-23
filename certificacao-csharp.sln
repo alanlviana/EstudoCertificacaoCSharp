@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt10", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt11", "certificacao-csharp-pt11\certificacao-csharp-pt11.csproj", "{3444F47E-8A88-4836-BE17-EA4951119880}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "certificacao-csharp-pt11-relogio", "certificacao-csharp-pt11-relogio\certificacao-csharp-pt11-relogio.csproj", "{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certificacao-csharp-pt11-relogio", "certificacao-csharp-pt11-relogio\certificacao-csharp-pt11-relogio.csproj", "{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "certificacao-csharp-pt12", "certificacao-csharp-pt12\certificacao-csharp-pt12.csproj", "{D71AE171-A05A-4C6A-A94E-94B44D38C920}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,10 @@ Global
 		{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7BB1C93-5654-4A4C-B4B5-5CC313AF90F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D71AE171-A05A-4C6A-A94E-94B44D38C920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D71AE171-A05A-4C6A-A94E-94B44D38C920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D71AE171-A05A-4C6A-A94E-94B44D38C920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D71AE171-A05A-4C6A-A94E-94B44D38C920}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
